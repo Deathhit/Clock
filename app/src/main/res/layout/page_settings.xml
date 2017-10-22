@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="20"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:orientation="vertical">
+
+        <view
+            android:id="@+id/alarmTimeSettingSubPage"
+            class="custom.clock.pages.settings.AlarmTimeSettingSubPage"
+            layout_width="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorDivider" />
+
+        <view
+            android:id="@+id/ringtoneSettingSubPage"
+            class="custom.clock.pages.settings.RingtoneSettingSubPage"
+            layout_width="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorDivider" />
+
+        <view
+            android:id="@+id/vibrationSettingSubPage"
+            class="custom.clock.pages.settings.VibrationSettingSubPage"
+            layout_width="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorDivider" />
+
+    </LinearLayout>
+
+</LinearLayout>

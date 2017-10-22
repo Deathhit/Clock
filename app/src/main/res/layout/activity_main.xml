@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<custom.clock.library.page.PageContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/settingsImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/settings"
+                android:tint="@drawable/icon_color_state" />
+
+            <ImageView
+                android:id="@+id/overviewImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/overview"
+                android:tint="@drawable/icon_color_state" />
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pagePager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18.75">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+
+</custom.clock.library.page.PageContainer>
+
