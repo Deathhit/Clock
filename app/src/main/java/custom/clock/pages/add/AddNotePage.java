@@ -42,7 +42,7 @@ public class AddNotePage extends Page implements View.OnClickListener{
 
         MainActivity.loadListAdapter();
 
-        MainActivity.message("Item Added");
+        MainActivity.message("Clock Added");
 
         MainActivity.goBackToRoot();
     }
