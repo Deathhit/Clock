@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_selected="true" android:color = "@color/colorIconSelected"/>
-    <item android:state_selected="false" android:color = "@color/colorIconDefault"/>
+    <item android:color = "@color/colorIconSelected" android:state_selected="true" />
+    <item android:color = "@color/colorIconDefault" android:state_selected="false" />
 
 </selector>
