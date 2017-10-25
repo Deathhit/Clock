@@ -63,6 +63,6 @@ public class AddAlarmPage extends Page implements OnClickListener{
         AddNotePage page = new AddNotePage(getContext());
         page.setAlarmData(alarmData);
 
-        ((PageContainerActivity)getContext()).goToNext(page);
+        PageContainerActivity.goToNext(page);
     }
 }

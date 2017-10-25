@@ -12,10 +12,11 @@ import android.widget.Toast;
 import custom.clock.alarm.AlarmContract;
 import custom.clock.alarm.AlarmData;
 import custom.clock.database.DatabaseContract;
+import custom.clock.library.adapter.ViewPagerAdapter;
 import custom.clock.library.page.Page;
 import custom.clock.library.page.PageContainer;
+
 import custom.clock.library.page.PageContainerActivity;
-import custom.clock.library.page.PagePagerAdapter;
 import custom.clock.pages.about.AboutPage;
 import custom.clock.pages.overview.OverviewPage;
 import custom.clock.pages.ClockItem.ClockItemAdapter;
@@ -79,7 +80,7 @@ public class MainActivity extends PageContainerActivity implements View.OnClickL
 
         icons[0].setSelected(true);
 
-        PagePagerAdapter pageAdapter = new PagePagerAdapter();
+        ViewPagerAdapter pageAdapter = new ViewPagerAdapter();
 
         pageAdapter.add(0, new OverviewPage(this));
         pageAdapter.add(1, new SettingsPage(this));
